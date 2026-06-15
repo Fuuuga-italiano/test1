@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>预备单元 · 意大利语对话 C2 音频04｜真人发音版</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #F7F4EF;
+            font-family: 'Segoe UI', 'Roboto', system-ui, -apple-system, sans-serif;
+            padding: 24px 20px 60px;
+            color: #2C2C2E;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+            border-bottom: 2px solid #E8E3DA;
+            padding-bottom: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #C4D0C5;
+            color: #3C4E3E;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 4px 12px;
+            border-radius: 40px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 1.9rem;
+            font-weight: 500;
+            color: #2C2C2E;
+            letter-spacing: -0.3px;
+        }
+
+        .sub {
+            color: #636366;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        .card {
+            background: #FDFBF8;
+            border-radius: 28px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+            margin-bottom: 32px;
+            overflow: hidden;
+            border: 1px solid #E8E3DA;
+        }
+
+        .card-header {
+            background: #F2EFEA;
+            padding: 16px 24px;
+            border-bottom: 1px solid #E2DCD2;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .dialogue-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .speech-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 18px 24px;
+            border-bottom: 1px solid #F0ECE5;
+            transition: background 0.12s;
+        }
+
+        .speech-row:last-child {
+            border-bottom: none;
+        }
+
+        .speech-row:hover {
+            background: #F9F6F0;
+        }
+
+        .speaker {
+            min-width: 85px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #8A9E8C;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .italian {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #1F2A1E;
+            margin-bottom: 5px;
+        }
+
+        .chinese {
+            font-size: 0.85rem;
+            color: #7A6E64;
+            border-left: 2px solid #DCCFC4;
+            padding-left: 10px;
+            margin-top: 5px;
+        }
+
+        .audio-btn {
+            background: none;
+            border: 1px solid #DDD5CB;
+            width: 36px;
+            height: 36px;
+            border-radius: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 14px;
+            color: #8D7F72;
+            transition: 0.1s;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .audio-btn:hover {
+            background: #E8E3DA;
+            border-color: #B9AE9F;
+            color: #4E3F32;
+        }
+
+        .audio-btn.playing {
+            background: #8A9E8C;
+            border-color: #8A9E8C;
+            color: white;
+        }
+
+        .info-note {
+            text-align: center;
+            font-size: 12px;
+            color: #A09890;
+            background: #F1EFEA;
+            border-radius: 50px;
+            padding: 10px 18px;
+            width: fit-content;
+            margin: 20px auto 0;
+        }
+
+        @media (max-width: 550px) {
+            .speech-row {
+                padding: 14px 18px;
+                gap: 10px;
+            }
+            .speaker {
+                min-width: 65px;
+                font-size: 0.8rem;
+            }
+            .audio-btn {
+                width: 32px;
+                height: 32px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="badge">🎧 预备单元 · C2 音频04 · 真人发音版</div>
+        <h1>🇮🇹 初次见面 · 自我介绍</h1>
+        <div class="sub">点击每句话旁边的 ▶ 按钮，收听对应的真人录音</div>
+    </div>
+
+    <!-- 对话 a -->
+    <div class="card">
+        <div class="card-header">
+            <span class="dialogue-title">📌 对话 a · 相识与国籍</span>
+        </div>
+        <div class="speech-row">
+            <div class="speaker">👩 Stella</div>
+            <div class="content">
+                <div class="italian">Buongiorno, Alice. Questi sono Gary e Bob.</div>
+                <div class="chinese">早上好，阿利切。这两位是加里和鲍勃。</div>
+            </div>
+            <button class="audio-btn" data-audio="a1">▶</button>
+        </div>
+        <div class="speech-row">
+            <div class="speaker">👩 Alice</div>
+            <div class="content">
+                <div class="italian">Ciao, io sono Alice. Siete americani?</div>
+                <div class="chinese">嗨，我是阿利切。你们是美国人吗？</div>
+            </div>
+            <button class="audio-btn" data-audio="a2">▶</button>
+        </div>
+        <div class="speech-row">
+            <div class="speaker">👨 Bob</div>
+            <div class="content">
+                <div class="italian">Io sono americano, lui è australiano!</div>
+                <div class="chinese">我是美国人，他是澳大利亚人！</div>
+            </div>
+            <button class="audio-btn" data-audio="a3">▶</button>
+        </div>
+    </div>
+
+    <!-- 对话 b -->
+    <div class="card">
+        <div class="card-header">
+            <span class="dialogue-title">📌 对话 b · 新朋友 · 你是西班牙人吗？</span>
+        </div>
+        <div class="speech-row">
+            <div class="speaker">👩 Giorgia</div>
+            <div class="content">
+                <div class="italian">Ciao, questa è Dolores.</div>
+                <div class="chinese">嗨，这位是多洛雷斯。</div>
+            </div>
+            <button class="audio-btn" data-audio="b1">▶</button>
+        </div>
+        <div class="speech-row">
+            <div class="speaker">👨 Matteo</div>
+            <div class="content">
+                <div class="italian">Piacere Dolores, io sono Matteo. Sei spagnola?</div>
+                <div class="chinese">幸会，多洛雷斯，我是马泰奥。你是西班牙人吗？</div>
+            </div>
+            <button class="audio-btn" data-audio="b2">▶</button>
+        </div>
+        <div class="speech-row">
+            <div class="speaker">👩 Dolores</div>
+            <div class="content">
+                <div class="italian">Sì, e tu?</div>
+                <div class="chinese">是的，你呢？</div>
+            </div>
+            <button class="audio-btn" data-audio="b3">▶</button>
+        </div>
+        <div class="speech-row">
+            <div class="speaker">👨 Matteo</div>
+            <div class="content">
+                <div class="italian">Sono italiano.</div>
+                <div class="chinese">我是意大利人。</div>
+            </div>
+            <button class="audio-btn" data-audio="b4">▶</button>
+        </div>
+    </div>
+
+    <div class="info-note">
+        💡 提示：点击 ▶ 按钮播放对应的真人录音。每个音频文件独立，可反复点击收听。
+    </div>
+</div>
+
+<script>
+    // 音频播放器管理
+    let currentAudio = null;
+    let currentButton = null;
+
+    function playAudio(audioId, buttonElement) {
+        const audioPath = `${audioId}.mp3`;
+        const audio = new Audio(audioPath);
+        
+        // 停止当前正在播放的音频
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+            if (currentButton) {
+                currentButton.textContent = '▶';
+                currentButton.classList.remove('playing');
+            }
+        }
+        
+        // 播放新音频
+        audio.play().catch(function(error) {
+            console.log("播放失败:", error);
+            alert("找不到音频文件：" + audioPath + "\n请确保文件放在 audio 文件夹中");
+        });
+        
+        // 更新按钮状态
+        buttonElement.textContent = '⏸';
+        buttonElement.classList.add('playing');
+        
+        // 音频结束时恢复按钮
+        audio.onended = function() {
+            buttonElement.textContent = '▶';
+            buttonElement.classList.remove('playing');
+            currentAudio = null;
+            currentButton = null;
+        };
+        
+        currentAudio = audio;
+        currentButton = buttonElement;
+    }
+
+    // 为所有音频按钮绑定点击事件
+    document.querySelectorAll('.audio-btn').forEach(function(btn) {
+        btn.addEventListener('click', function(event) {
+            event.stopPropagation();
+            const audioId = this.getAttribute('data-audio');
+            
+            // 如果点击的是正在播放的按钮，则停止播放
+            if (currentButton === this && currentAudio && !currentAudio.paused) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+                this.textContent = '▶';
+                this.classList.remove('playing');
+                currentAudio = null;
+                currentButton = null;
+            } else {
+                playAudio(audioId, this);
+            }
+        });
+    });
+</script>
+</body>
+</html>
