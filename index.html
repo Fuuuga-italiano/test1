@@ -287,7 +287,7 @@
         // 播放新音频
         audio.play().catch(function(error) {
             console.log("播放失败:", error);
-            alert("找不到音频文件：" + audioPath + "\n请确保文件放在 audio 文件夹中");
+            alert("找不到音频文件：" + audioPath + "\n请确保文件放在同一个文件夹中");
         });
         
         // 更新按钮状态
